@@ -1,0 +1,30 @@
+/* .contact__list {
+} */
+.contact__item {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.contact__text {
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+.contact__button {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 1px 20px 1px 20px;
+  background-color: rgb(105, 105, 255);
+  color: rgb(217, 255, 2);
+}
+.contact__button:hover,
+.contact__button:focus {
+  color: black;
+  background-color: tomato;
+}
