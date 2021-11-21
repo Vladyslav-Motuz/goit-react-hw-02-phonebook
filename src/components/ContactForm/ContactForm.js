@@ -2,7 +2,7 @@ import React from "react";
 import s from './ContactForm.module.css';
 
 class ContactForm extends React.Component {
-    state = {        
+    state = {
         name: "",
         number: ""
     };
@@ -14,18 +14,18 @@ class ContactForm extends React.Component {
     };
 
     handleSubmit = (event) => {
-        event.preventDefault();        
+        event.preventDefault();
         this.props.onSubmit(this.state);
 
         this.resetForm();
-    }
+    };
 
     resetForm = () => {
         this.setState({
             name: "",
             number: ""
         })
-    }
+    };
 
     render() {
         const { name, number } = this.state;

@@ -10,6 +10,6 @@ const Filter = ({ value, onChange }) => {
                 onChange={onChange} />
         </label>
     )
-}
+};
 
 export default Filter;

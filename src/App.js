@@ -14,11 +14,11 @@ class App extends React.Component {
   
   addcontact = (contact) => {
     const { name } = contact;
-    const filterName = this.state.contacts.find(contact => contact.name === name);    
-    filterName ? alert(`${name} is already in contacts!`):
-    this.setState(preState => ({
-      contacts: [...preState.contacts, { id: nanoid(), ...contact}]    
-    }))
+    const filterName = this.state.contacts.find(contact => contact.name === name);
+    filterName ? alert(`${name} is already in contacts!`) :
+      this.setState(preState => ({
+        contacts: [...preState.contacts, { id: nanoid(), ...contact }]
+      }))
   };
 
   deleteContact = (nameID) => {
@@ -55,7 +55,7 @@ class App extends React.Component {
           onDeleteContact={this.deleteContact} />
       </div>
     )
-  }    
+  }
 }
 
 export default App;
